@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Траектория ЕГЭ</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{--ink:#303030;--muted:#777;--paper:#fff;--bg:#fff4e6;--line:#e4caa6;--orange:#f28c00;--orange-dark:#c96800;--active:var(--orange)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#ff9e1b 0 150px,var(--bg) 150px);color:var(--ink);font-family:Roboto,Arial,sans-serif}.sitebar{height:54px;background:#ea7f00;border-bottom:3px solid #b95e00}.bar-inner{width:min(1100px,calc(100% - 32px));height:100%;margin:auto;display:flex;align-items:center;gap:34px}.brand{font-size:1.12rem;font-weight:700;color:#fff;text-decoration:none}.sitebar nav{height:100%;display:flex;gap:4px}.sitebar nav a{display:flex;align-items:center;padding:0 13px;color:#fff;text-decoration:none;font-size:.88rem}.sitebar nav a:hover,.sitebar nav .selected{background:#b95e0059}.container{width:min(1100px,calc(100% - 32px));margin:auto;padding:30px 0 60px}.hero{display:flex;justify-content:space-between;align-items:center;background:#fff;border:2px solid #fff;box-shadow:0 4px 0 #bd6200;padding:27px 30px;margin-bottom:22px}.eyebrow{font-size:.71rem;letter-spacing:.1em;font-weight:700;color:var(--orange-dark);margin:0 0 6px}h1,h2{margin:0}h1{font-size:2rem;font-weight:500}h2{font-size:1.17rem;font-weight:500}.hero p:not(.eyebrow){color:var(--muted);margin:8px 0 0}.hero-mark{background:var(--orange);color:#fff;font-weight:700;font-size:1.1rem;padding:18px 13px;box-shadow:4px 4px 0 #e5e5e5}.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.subject{display:flex;align-items:center;gap:11px;text-align:left;border:2px solid #fff;border-radius:0;padding:13px;background:#fff;color:var(--ink);font:500 .9rem Roboto;cursor:pointer;transition:background .15s,border-color .15s,transform .15s;box-shadow:0 2px 0 #e6c99f}.subject:hover{background:#fff2de;transform:translateY(-1px)}.subject.active{border-color:var(--orange);box-shadow:inset 5px 0 var(--orange),0 2px 0 #e6c99f}.subject-icon{display:grid;place-items:center;width:32px;height:32px;background:var(--orange);color:#fff;font-weight:700;font-size:1rem}.subject small{display:block;color:var(--muted);font-size:.73rem;font-weight:400;margin-top:2px}.subject b{margin-left:auto;font-size:1.2rem;color:var(--orange-dark)}.overview{display:grid;grid-template-columns:repeat(3,1fr);background:var(--orange);border:3px solid #f6a03c;margin-bottom:18px;color:#fff}.metric{padding:17px 22px;border-right:1px solid #ffffff75}.metric:last-child{border:0}.metric span,.metric small{display:block;color:#fff5e8;font-size:.78rem}.metric strong{display:block;font-size:1.8rem;margin:6px 0;letter-spacing:-.03em}.metric strong.positive{color:#fff}.metric strong.negative{color:#7e2600}.chart-section,.entry-form,.history{background:#fff;border:2px solid #fff;padding:22px;box-shadow:0 3px 0 #e8cda8}.section-heading{display:flex;align-items:start;justify-content:space-between;gap:15px;margin-bottom:17px;padding-bottom:13px;border-bottom:2px solid #ffe2ba}.section-heading>span{color:var(--muted);font-size:.8rem;margin-top:3px}.chart-wrap{height:300px}#chart{width:100%;height:100%;overflow:visible}.grid{stroke:#ffe1b9;stroke-width:1}.axis{fill:var(--muted);font-size:11px}.trend{fill:none;stroke:var(--orange);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.dot{fill:var(--orange);stroke:#fff;stroke-width:3}.workspace{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px;margin-top:18px}.entry-form{display:grid;gap:13px;border-top:5px solid var(--orange)}label{font-size:.79rem;font-weight:700;color:#555;display:grid;gap:6px}input,textarea,select{width:100%;border:1px solid #d8b986;border-radius:2px;padding:10px;font:400 .9rem Roboto;color:var(--ink);background:#fffdf9}input:focus,textarea:focus,select:focus{outline:3px solid #ffd89a;border-color:var(--orange)}textarea{height:78px;resize:vertical}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.entry-form button{border:0;border-radius:2px;padding:12px 14px;background:var(--orange);color:#fff;font:700 .9rem Roboto;cursor:pointer;box-shadow:0 3px 0 var(--orange-dark)}.entry-form button:hover{background:var(--orange-dark)}.entry-form button span{font-size:1.1rem;margin-left:6px}.form-message{min-height:1.1em;margin:0;color:#207341;font-size:.8rem;font-weight:500}.form-message.error{color:#b43516}.history{min-height:330px}.clear{border:0;background:transparent;color:#a34821;font:500 .78rem Roboto;cursor:pointer;padding:5px}.clear:hover{text-decoration:underline}.empty{color:var(--muted);font-size:.9rem;padding:34px 0}ol{list-style:none;margin:0;padding:0}.result{border-top:1px solid #f0dac0;padding:13px 0}.result:first-child{border-top:0;padding-top:0}.result-top{display:flex;justify-content:space-between;gap:12px}.result-title{font-weight:700;font-size:.9rem}.result-meta,.result-note{margin:4px 0 0;color:var(--muted);font-size:.78rem}.result-score{color:var(--orange-dark);font-weight:700;white-space:nowrap}.delete{margin-top:3px;background:none;border:0;color:var(--muted);font:400 .72rem Roboto;cursor:pointer;padding:0}.delete:hover{color:#b44921}@media(max-width:720px){.sitebar nav{display:none}.bar-inner{justify-content:center}.container{width:min(100% - 24px,1100px);padding-top:18px}.hero{padding:21px}.hero-mark{display:none}.subjects,.overview,.workspace{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid #ffffff75}.metric:last-child{border:0}.chart-section,.entry-form,.history{padding:17px}.chart-wrap{height:230px}}
+
+</style>
+</head>
+<body>
+  <div class="sitebar"><div class="bar-inner"><a class="brand" href="#top">Подготовка к ЕГЭ</a><nav aria-label="Разделы"><a class="selected" href="#progress">Статистика</a><a href="#resultForm">Пробники</a></nav></div></div>
+  <main class="container">
+    <header class="hero" id="top"><div><p class="eyebrow">ЛИЧНЫЙ ТРЕКЕР ПОДГОТОВКИ</p><h1>Мой прогресс</h1><p>Результаты пробных экзаменов по трём предметам — в одном месте.</p></div><div class="hero-mark" aria-hidden="true">ЕГЭ</div></header>
+    <nav class="subjects" aria-label="Выбор предмета">
+      <button class="subject active" data-subject="math" type="button"><span class="subject-icon">∑</span><span>Математика<small>профильная</small></span><b id="mathLast">—</b></button>
+      <button class="subject" data-subject="russian" type="button"><span class="subject-icon">А</span><span>Русский язык<small>ЕГЭ</small></span><b id="russianLast">—</b></button>
+      <button class="subject" data-subject="physics" type="button"><span class="subject-icon">⚛</span><span>Физика<small>ЕГЭ</small></span><b id="physicsLast">—</b></button>
+    </nav>
+    <section class="overview" aria-label="Статистика выбранного предмета">
+      <div class="metric"><span>Последний результат</span><strong id="lastScore">—</strong><small>баллов из 100</small></div>
+      <div class="metric"><span>Средний результат</span><strong id="averageScore">—</strong><small>по всем работам</small></div>
+      <div class="metric"><span>Рост с начала</span><strong id="changeScore">—</strong><small id="changeHint">добавь две работы</small></div>
+    </section>
+    <section class="chart-section" id="progress"><div class="section-heading"><div><p class="eyebrow" id="chartKicker">ПРОФИЛЬНАЯ МАТЕМАТИКА</p><h2>График результатов пробников</h2></div><span id="chartNote">Добавь первый результат</span></div><div class="chart-wrap"><svg id="chart" viewBox="0 0 760 280" role="img" aria-labelledby="chartTitle chartDesc"><title id="chartTitle">График результатов</title><desc id="chartDesc">График будет заполнен после добавления результатов.</desc></svg></div></section>
+    <section class="workspace">
+      <form id="resultForm" class="entry-form"><div class="section-heading"><h2>Новый результат</h2><span class="form-subject" id="formSubject">Математика</span></div>
+        <label>Предмет<select id="subjectInput" name="subject"><option value="math">Профильная математика</option><option value="russian">Русский язык</option><option value="physics">Физика</option></select></label>
+        <div class="form-grid"><label>Дата<input id="date" name="date" type="date" required></label><label>Балл<input id="score" name="score" type="number" min="0" max="100" placeholder="0–100" required></label></div>
+        <label>Источник<input id="source" name="source" maxlength="80" placeholder="ФИПИ, школьный пробник…"></label><label>Заметка<textarea id="note" name="note" maxlength="250" placeholder="Какие темы стоит повторить?"></textarea></label><button type="submit">Добавить в прогресс <span>→</span></button><p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+      <section class="history" aria-labelledby="historyTitle"><div class="section-heading"><div><p class="eyebrow">ПОПЫТКИ</p><h2 id="historyTitle">История результатов</h2></div><button id="clearButton" class="clear" type="button">Очистить предмет</button></div><div id="emptyState" class="empty">Здесь появятся результаты выбранного предмета.</div><ol id="resultsList"></ol></section>
+    </section>
+  </main><script>
+var KEY = "ege-multi-subject-results-v2";
+var memoryResults = [];
+var subjects = {
+  math: { name: "Профильная математика", short: "Математика", color: "#f28c00" },
+  russian: { name: "Русский язык", short: "Русский язык", color: "#f28c00" },
+  physics: { name: "Физика", short: "Физика", color: "#f28c00" }
+};
+var active = "math";
+var form = document.getElementById("resultForm");
+var chart = document.getElementById("chart");
+var message = document.getElementById("formMessage");
+
+function byId(id) { return document.getElementById(id); }
+function setToday() { byId("date").value = new Date().toISOString().slice(0, 10); }
+function getResults() {
+  try {
+    var saved = window.localStorage.getItem(KEY);
+    return saved ? JSON.parse(saved) : memoryResults;
+  } catch (error) {
+    return memoryResults;
+  }
+}
+function setResults(items) {
+  memoryResults = items;
+  try { window.localStorage.setItem(KEY, JSON.stringify(items)); } catch (error) {}
+  render();
+}
+function getCurrent() {
+  return getResults().filter(function (item) { return (item.subject || "math") === active; }).sort(function (a, b) { return a.date.localeCompare(b.date); });
+}
+function makeId() {
+  if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+  return "result-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+}
+function escapeHtml(value) { var el = document.createElement("div"); el.textContent = value; return el.innerHTML; }
+function dateText(date) { return new Intl.DateTimeFormat("ru-RU", { day: "numeric", month: "short", year: "numeric" }).format(new Date(date + "T12:00:00")); }
+function lastOf(items) { return items.length ? items[items.length - 1] : null; }
+
+function renderStats(items) {
+  var last = lastOf(items), average = null, change = null;
+  if (items.length) average = Math.round(items.reduce(function (sum, item) { return sum + Number(item.score); }, 0) / items.length);
+  if (items.length > 1) change = Number(last.score) - Number(items[0].score);
+  byId("lastScore").textContent = last ? last.score : "—";
+  byId("averageScore").textContent = average === null ? "—" : average;
+  var changeNode = byId("changeScore");
+  changeNode.className = change > 0 ? "positive" : change < 0 ? "negative" : "";
+  changeNode.textContent = change === null ? "—" : (change > 0 ? "+" : "") + change;
+  byId("changeHint").textContent = change === null ? "добавь две работы" : "к первой работе (" + items[0].score + ")";
+}
+
+function renderChart(items) {
+  var w = 760, h = 280, left = 44, right = 18, top = 14, bottom = 37, pw = w - left - right, ph = h - top - bottom;
+  var output = [0, 25, 50, 75, 100].map(function (value) {
+    var y = top + ph - value / 100 * ph;
+    return '<line class="grid" x1="' + left + '" y1="' + y + '" x2="' + (w - right) + '" y2="' + y + '"/><text class="axis" x="' + (left - 9) + '" y="' + (y + 4) + '" text-anchor="end">' + value + '</text>';
+  }).join("");
+  if (!items.length) {
+    chart.innerHTML = output + '<text class="axis" x="' + (w / 2) + '" y="' + (h / 2) + '" text-anchor="middle">Добавь результат, чтобы увидеть динамику</text>';
+    byId("chartNote").textContent = "Пока нет попыток";
+    return;
+  }
+  var points = items.map(function (item, index) {
+    return { item: item, x: items.length === 1 ? w / 2 : left + index / (items.length - 1) * pw, y: top + ph - Number(item.score) / 100 * ph };
+  });
+  output += '<path class="trend" d="M ' + points.map(function (point) { return point.x + " " + point.y; }).join(" L ") + '"/>';
+  output += points.map(function (point) { return '<circle class="dot" cx="' + point.x + '" cy="' + point.y + '" r="5"><title>' + dateText(point.item.date) + ": " + point.item.score + ' баллов</title></circle>'; }).join("");
+  output += points.map(function (point, index) {
+    var label = items.length > 5 && index % 2 ? "" : new Date(point.item.date + "T12:00:00").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit" });
+    return '<text class="axis" x="' + point.x + '" y="' + (h - 12) + '" text-anchor="middle">' + label + '</text>';
+  }).join("");
+  chart.innerHTML = output;
+  byId("chartNote").textContent = items.length + " " + (items.length === 1 ? "попытка" : items.length < 5 ? "попытки" : "попыток") + " · последний " + lastOf(items).score + "/100";
+}
+
+function renderList(items) {
+  byId("emptyState").hidden = !!items.length;
+  byId("resultsList").innerHTML = items.slice().reverse().map(function (item) {
+    return '<li class="result"><div class="result-top"><div><div class="result-title">' + escapeHtml(item.source || "Пробник") + '</div><p class="result-meta">' + dateText(item.date) + '</p></div><div><div class="result-score">' + item.score + '/100</div><button class="delete" data-id="' + item.id + '" type="button">Удалить</button></div></div>' + (item.note ? '<p class="result-note">' + escapeHtml(item.note) + '</p>' : "") + '</li>';
+  }).join("");
+}
+function renderSubjectScores() {
+  Object.keys(subjects).forEach(function (key) {
+    var values = getResults().filter(function (item) { return (item.subject || "math") === key; }).sort(function (a, b) { return a.date.localeCompare(b.date); });
+    byId(key + "Last").textContent = lastOf(values) ? lastOf(values).score : "—";
+  });
+}
+function render() {
+  document.documentElement.style.setProperty("--active", subjects[active].color);
+  Array.prototype.forEach.call(document.querySelectorAll(".subject"), function (button) { button.classList.toggle("active", button.dataset.subject === active); });
+  byId("subjectInput").value = active;
+  byId("formSubject").textContent = subjects[active].short;
+  byId("chartKicker").textContent = subjects[active].name.toUpperCase();
+  var items = getCurrent(); renderStats(items); renderChart(items); renderList(items); renderSubjectScores();
+}
+
+document.querySelector(".subjects").addEventListener("click", function (event) {
+  var button = event.target.closest(".subject"); if (!button) return; active = button.dataset.subject; render();
+});
+byId("subjectInput").addEventListener("change", function (event) { active = event.target.value; render(); });
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); message.textContent = ""; message.className = "form-message";
+  try {
+    var values = new FormData(form), score = Number(values.get("score"));
+    if (!values.get("date") || !Number.isFinite(score) || score < 0 || score > 100) throw new Error("Укажите дату и балл от 0 до 100.");
+    var all = getResults();
+    all.push({ id: makeId(), subject: values.get("subject"), date: values.get("date"), score: score, source: values.get("source").trim(), note: values.get("note").trim() });
+    active = values.get("subject"); setResults(all); form.reset(); setToday(); byId("subjectInput").value = active;
+    message.textContent = "Результат добавлен — статистика и график обновлены.";
+  } catch (error) { message.textContent = error.message || "Не удалось сохранить результат."; message.className = "form-message error"; }
+});
+byId("resultsList").addEventListener("click", function (event) { if (event.target.matches(".delete")) setResults(getResults().filter(function (item) { return item.id !== event.target.dataset.id; })); });
+byId("clearButton").addEventListener("click", function () { if (confirm("Удалить все результаты по предмету «" + subjects[active].name + "»?")) setResults(getResults().filter(function (item) { return (item.subject || "math") !== active; })); });
+setToday(); render();
+
+</script>
+</body></html>
+
